@@ -53,6 +53,8 @@ def calcular_iteracao(a, b, e, k=0, c=0):
         
     if k == K:
         print(intervalo_raiz)
+        input('\nAperte ENTER para encerrar..')
+        exit()
     elif sinal == '-':
         calcular_iteracao(a, b, e, k + 1, cont_raiz)
     else:
